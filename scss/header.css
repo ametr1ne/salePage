@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+}
+.header__logo {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__tapes {
+  margin-top: 57px;
+  width: 100%;
+}
+.header__tapes_mob {
+  display: none;
+  margin-top: 0;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    width: 46px;
+    height: 35px;
+    top: 20px;
+  }
+  .header__tapes {
+    display: none;
+  }
+  .header__tapes_mob {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

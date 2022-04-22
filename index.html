@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scss/style.css">
+    <script defer src="js/jquery.3-5-1.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/messages_ru.js"></script>
+    <script defer src="js/jquery.maskedinput.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>Успей записаться со скидкой</title>
+</head>
+<body>
+<header class="header">
+    <svg class="header__logo" width="82" height="63" viewBox="0 0 82 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M61 0H21L0 21.2164L41 62.6389L82 21.2164L61 0ZM46.94 30.3293V45.4637H35.06V30.3293L21 16.1043L27.94 9.09274L41 22.2873L54.06 9.09274L61 16.1043L46.94 30.3293Z"
+              fill="white"/>
+    </svg>
+    <img class="header__tapes" src="img/img.png" alt="img">
+    <img class="header__tapes_mob" src="img/img_1.png" alt="img">
+</header>
+<main class="main">
+    <div id="block12" class="block12">
+        <div class="block12__container">
+            <div class="block12__title">
+                <h1>Успей записаться со скидкой,
+                    страница закроется через —
+                    <span><span class="timer__days">00</span> дней, <span class="timer__hours">00</span>:<span
+                            class="timer__minutes">00</span>:<span class="timer__seconds">00</span></span></h1>
+                <p>Выберите тариф основного курса «Профессия веб-дизайнер»
+                    и отправьте заявку на участие</p>
+            </div>
+            <div class="block12__cards">
+                <div class="block12__card tariff-full">
+                    <div class="card__teachers">
+                        <img src="img/dima_little.png" alt="dima">
+                        <img src="img/lika_little.png" alt="lika">
+                        <img src="img/lecha_little.png" alt="lecha">
+                    </div>
+                    <div class="card__up">
+                        <p class="tariff">Тариф</p>
+                        <h2 class="card__title">Обучение <br>с обратной связью</h2>
+                        <div class="card__info">
+                            <div class="info__item">
+                                24 февраля, 19:00 мск
+                            </div>
+                            <div class="info__item">
+                                4 месяца
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Основная программа</li>
+                        <li>Материалы для выполнения домашних заданий</li>
+                        <li>Личный кабинет</li>
+                        <li>Шкала прогресса обучения</li>
+                        <li>Доступ в закрытую группу школы</li>
+                        <li>Техническая поддержка</li>
+                        <li class="benefits">Разборы домашних заданий</li>
+                        <li class="benefits">Пересдача домашних заданий</li>
+                        <li class="benefits">Дипломный проект</li>
+                    </ul>
+                    <form id="form_full" method="post">
+                        <div class="sale-star">
+                            <strong>Скидка —<br>
+                                8 000 руб.</strong>
+                        </div>
+                        <div class="form__content">
+                            <h4>Выберите способ оплаты</h4>
+                            <div class="radios">
+                                <div class="card__input-radio">
+                                    <input class="real-radio-btn" value="45 990 руб." name="price" type="radio"
+                                           id="full-price" aria-describedby="error-price">
+                                    <label for="full-price">37 990 руб. <span>/ <br>полная оплата</span></label>
+                                </div>
+                                <p class="old-price">45 990 руб.</p>
+                                <div class="card__input-radio">
+                                    <input class="real-radio-btn" value="14 990 руб." name="price" type="radio"
+                                           id="parts-price" aria-describedby="error-price">
+                                    <label for="parts-price">12 990 руб.
+                                        <span>/ <br>раз в месяц, 4 месяца</span></label>
+                                </div>
+                                <p class="old-price">14 990 руб.</p>
+                                <span class="error" id="error-price"></span>
+                            </div>
+                            <div class="input__wrap">
+                                <input type="text" name="name" autocomplete="off" value="" aria-describedby="error-name"
+                                       onkeyup="this.setAttribute('value', this.value)">
+                                <label>Имя</label>
+                                <span class="error" id="error-name"></span>
+                            </div>
+                            <div class="input__wrap">
+                                <input class="mask" type="tel" name="phone" autocomplete="off" value=""
+                                       aria-describedby="error-phone" onkeyup="this.setAttribute('value', this.value)">
+                                <label>Телефон</label>
+                                <span class="error" id="error-phone"></span>
+                            </div>
+                            <div class="input__wrap">
+                                <input type="email" name="email" autocomplete="off" value=""
+                                       aria-describedby="error-email" onkeyup="this.setAttribute('value', this.value)">
+                                <label>E-mail</label>
+                                <span class="error" id="error-email"></span>
+                            </div>
+                        </div>
+                        <button class="submit-btn">Отправить
+                            <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.941 5.1885C20.9016 5.10015 20.8524 5.02162 20.7835 4.9529L16.0403 0.221322C15.7549 -0.0633574 15.2826 -0.0633574 14.9972 0.221322C14.7118 0.506002 14.7118 0.977197 14.9972 1.26188L18.4808 4.73694H0.738051C0.334583 4.73694 0 5.06088 0 5.47318C0 5.88547 0.334583 6.20942 0.738051 6.20942H18.4808L14.9972 9.68448C14.7118 9.96916 14.7118 10.4404 14.9972 10.725C15.1448 10.8723 15.3318 10.941 15.5187 10.941C15.7057 10.941 15.8927 10.8723 16.0403 10.725L20.7835 5.99345C20.8524 5.92474 20.9016 5.84621 20.941 5.75786C21.0197 5.57134 21.0197 5.37501 20.941 5.1885Z"
+                                      fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="form__content">
+                            <p>Я согласен с условиями обработки персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="block12__card tariff-without">
+                    <div class="card__up">
+                        <p class="tariff">Тариф</p>
+                        <h2 class="card__title">Обучение<br>
+                            без обратной связи</h2>
+                        <div class="card__info">
+                            <div class="info__item">
+                                24 февраля, 19:00 мск
+                            </div>
+                            <div class="info__item">
+                                4 месяца
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Основная программа</li>
+                        <li>Материалы для выполнения домашних заданий</li>
+                        <li>Личный кабинет</li>
+                        <li>Шкала прогресса обучения</li>
+                        <li>Доступ в закрытую группу школы</li>
+                        <li>Техническая поддержка</li>
+                        <li class="benefits">Разборы домашних заданий</li>
+                        <li class="benefits">Пересдача домашних заданий</li>
+                        <li class="benefits">Дипломный проект</li>
+                    </ul>
+                    <form id="form_part" method="post">
+                        <div class="sale-star">
+                            <strong>Скидка —<br>
+                                8 000 руб.</strong>
+                        </div>
+                        <div class="form__content">
+                            <h4>Выберите способ оплаты</h4>
+                            <div class="radios">
+                                <div class="card__input-radio">
+                                    <input class="real-radio-btn" value="27 990 руб." name="price" type="radio"
+                                           id="full-price-without" aria-describedby="error-price">
+                                    <label for="full-price-without">19 990 руб. <span>/ <br>полная оплата</span></label>
+                                </div>
+                                <p class="old-price">27 990 руб.</p>
+                                <div class="card__input-radio">
+                                    <input class="real-radio-btn" value="7 990 руб." name="price" type="radio"
+                                           id="parts-price-without" aria-describedby="error-price">
+                                    <label for="parts-price-without">5 990 руб.
+                                        <span>/ <br>раз в месяц, 4 месяца</span></label>
+                                </div>
+                                <p class="old-price">7 990 руб.</p>
+                                <span class="error" id="error-price"></span>
+                            </div>
+                            <div class="input__wrap">
+                                <input type="text" name="name" autocomplete="off" value="" aria-describedby="error-name"
+                                       onkeyup="this.setAttribute('value', this.value)">
+                                <label>Имя</label>
+                                <span class="error" id="error-name"></span>
+                            </div>
+                            <div class="input__wrap">
+                                <input class="mask" type="tel" name="phone" autocomplete="off" value=""
+                                       aria-describedby="error-phone" onkeyup="this.setAttribute('value', this.value)">
+                                <label>Телефон</label>
+                                <span class="error" id="error-phone"></span>
+                            </div>
+                            <div class="input__wrap">
+                                <input type="email" name="email" autocomplete="off" value=""
+                                       aria-describedby="error-email" onkeyup="this.setAttribute('value', this.value)">
+                                <label>E-mail</label>
+                                <span class="error" id="error-email"></span>
+                            </div>
+                        </div>
+                        <button class="submit-btn">Отправить
+                            <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.941 5.1885C20.9016 5.10015 20.8524 5.02162 20.7835 4.9529L16.0403 0.221322C15.7549 -0.0633574 15.2826 -0.0633574 14.9972 0.221322C14.7118 0.506002 14.7118 0.977197 14.9972 1.26188L18.4808 4.73694H0.738051C0.334583 4.73694 0 5.06088 0 5.47318C0 5.88547 0.334583 6.20942 0.738051 6.20942H18.4808L14.9972 9.68448C14.7118 9.96916 14.7118 10.4404 14.9972 10.725C15.1448 10.8723 15.3318 10.941 15.5187 10.941C15.7057 10.941 15.8927 10.8723 16.0403 10.725L20.7835 5.99345C20.8524 5.92474 20.9016 5.84621 20.941 5.75786C21.0197 5.57134 21.0197 5.37501 20.941 5.1885Z"
+                                      fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="form__content">
+                            <p>Я согласен с условиями обработки персональных данных</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dark-form"></div>
+    <div class="form-success">
+        <svg class="form-close-btn" width="16" height="16" viewBox="0 0 16 16" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.00019L7.99988 8.00007L14.9999 1" stroke="#777777" stroke-width="2"
+                  stroke-linecap="round"/>
+            <path d="M15 15.0001L8.00012 8.00018L1.00005 15.0002" stroke="#777777" stroke-width="2"
+                  stroke-linecap="round"/>
+        </svg>
+        <h2>Отлично, мы приняли заявку!</h2>
+        <p class="corr">В ближайшее время с вами свяжется наш менеджер</p>
+        <p class="desc">А пока ждёте, подпишитесь на нашу группу ВКонтакте, там вы найдете много интересной и
+            полезной информации по веб-дизайну</p>
+        <a href="https://vk.com/yodiz" class="subscribe-btn">Подписаться
+            <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.941 5.1885C20.9016 5.10015 20.8524 5.02162 20.7835 4.9529L16.0403 0.221322C15.7549 -0.0633574 15.2826 -0.0633574 14.9972 0.221322C14.7118 0.506002 14.7118 0.977197 14.9972 1.26188L18.4808 4.73694H0.738051C0.334583 4.73694 0 5.06088 0 5.47318C0 5.88547 0.334583 6.20942 0.738051 6.20942H18.4808L14.9972 9.68448C14.7118 9.96916 14.7118 10.4404 14.9972 10.725C15.1448 10.8723 15.3318 10.941 15.5187 10.941C15.7057 10.941 15.8927 10.8723 16.0403 10.725L20.7835 5.99345C20.8524 5.92474 20.9016 5.84621 20.941 5.75786C21.0197 5.57134 21.0197 5.37501 20.941 5.1885Z"
+                      fill="white"/>
+            </svg>
+        </a>
+    </div>
+</main>
+</body>
+</html>

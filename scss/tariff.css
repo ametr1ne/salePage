@@ -1,0 +1,589 @@
+.block12 {
+  margin-bottom: 130px;
+}
+.block12__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block12__title {
+  margin: 0 auto;
+}
+.block12__title h1 {
+  color: white;
+  text-align: center;
+  font-size: 55px;
+  line-height: 110%;
+  margin-bottom: 34px;
+}
+.block12__title h1 br {
+  display: none;
+}
+.block12__title h1 span {
+  color: #FFF444;
+}
+.block12__title p {
+  margin: 0 auto;
+  max-width: 838px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #777777;
+}
+.block12__cards {
+  display: flex;
+  width: 100%;
+  grid-column-gap: 30px;
+  margin-top: 51px;
+  align-items: flex-start;
+}
+.block12__card {
+  padding: 41px 0 34px;
+  width: 50%;
+  position: relative;
+}
+.block12__card p {
+  color: #777777;
+}
+.block12__card .card__up, .block12__card ul {
+  padding: 0 36px;
+  border-bottom: 1px dashed #C7C7C7;
+}
+.block12__card .card__teachers {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.block12__card .card__teachers img {
+  position: relative;
+}
+.block12__card .card__teachers img:first-child {
+  z-index: 3;
+}
+.block12__card .card__teachers img:nth-child(2) {
+  z-index: 2;
+}
+.block12__card .card__teachers img:nth-child(3) {
+  z-index: 1;
+}
+.block12__card .card__teachers img:not(:last-child) {
+  margin-right: -18px;
+}
+.block12__card h2 {
+  margin-top: 20px;
+  margin-bottom: 26px;
+  line-height: 120%;
+}
+.block12__card .card__info {
+  display: flex;
+  margin-bottom: 34px;
+}
+.block12__card .card__info .info__item {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.block12__card .card__info .info__item:not(:last-child) {
+  margin-right: 38px;
+}
+.block12__card ul {
+  padding-top: 31px;
+  padding-bottom: 34px;
+}
+.block12__card ul li {
+  font-size: 19px;
+  line-height: 130%;
+  display: flex;
+}
+.block12__card ul li:before {
+  margin-top: -3px;
+  margin-right: 28px;
+}
+.block12__card ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.block12__card form {
+  padding: 0 23px;
+  position: relative;
+}
+.block12__card form .sale-star {
+  position: absolute;
+  background: url("../img/sale_yellow.png") no-repeat;
+  width: 138px;
+  height: 138px;
+  background-size: contain;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -74px;
+  right: 20px;
+}
+.block12__card form .sale-star strong {
+  transform: rotate(-3deg);
+}
+.block12__card form .form__content {
+  padding: 0 15px;
+}
+.block12__card form h4 {
+  margin-top: 47px;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin-bottom: 26px;
+}
+.block12__card form span.error {
+  color: red;
+  font-size: 14px;
+  line-height: 110%;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+.block12__card form .old-price {
+  margin-top: -9px;
+  color: black;
+  margin-left: 30px;
+  position: relative;
+  width: min-content;
+  white-space: nowrap;
+}
+.block12__card form .old-price:before {
+  content: "";
+  width: 100%;
+  background: #FF4444;
+  position: absolute;
+  height: 1.5px;
+  display: block;
+  top: 8px;
+  transform: rotate(-3deg);
+}
+.block12__card form .radios {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 15px;
+}
+.block12__card form .radios span.error {
+  right: unset;
+}
+.block12__card form .input__wrap {
+  position: relative;
+  z-index: 1;
+}
+.block12__card form input:not([type=radio]) {
+  display: block;
+  padding: 25px 0 25px;
+  width: 100%;
+  appearance: none;
+  outline: none;
+  font-size: 19px;
+  line-height: 65px;
+  border-bottom: 1px solid #C7C7C7;
+  box-shadow: none;
+  color: #000000;
+  border-radius: 0;
+  transition: border-bottom 0.3s linear;
+}
+.block12__card form input:not([type=radio]).error {
+  border-bottom: 1px solid red !important;
+}
+.block12__card form input:not([type=radio])::placeholder {
+  color: #000;
+}
+.block12__card form input:not([type=radio]):not(:last-child) {
+  margin-bottom: 27px;
+}
+.block12__card form .card__input-radio {
+  display: flex;
+  align-items: center;
+}
+.block12__card form .card__input-radio input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.block12__card form .card__input-radio label {
+  font-size: 30px;
+  line-height: 130%;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  transition: color 0.3s;
+}
+.block12__card form .card__input-radio label br {
+  display: none;
+}
+.block12__card form .card__input-radio label:hover {
+  color: #0500FF;
+}
+.block12__card form .card__input-radio label:before {
+  content: "";
+  width: 21px;
+  display: inline-block;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background-size: contain;
+}
+.block12__card form label {
+  font-size: 19px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+.block12__card form label span {
+  color: #777777;
+}
+.block12__card form .submit-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  height: 70px;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 29px 0 39px;
+  font-family: "Proxima Nova Sb", sans-serif;
+  font-size: 19px;
+  line-height: 140%;
+  margin-bottom: 22px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.block12__card form h4 {
+  font-family: "Proxima Nova Sb", sans-serif;
+}
+.block12 .tariff-full {
+  background: #FFFFFF;
+}
+.block12 .tariff-full h2 {
+  color: black;
+}
+.block12 .tariff-full ul li:before {
+  content: url("../img/mark.svg");
+}
+.block12 .tariff-full form .card__input-radio label:before {
+  background: url("../img/radio_empty_white.svg") 0 0 no-repeat;
+}
+.block12 .tariff-full form .card__input-radio .real-radio-btn:checked + label:before {
+  background: url("../img/radio_fill_white.svg") 0 0 no-repeat;
+}
+.block12 .tariff-full form .submit-btn {
+  border: none;
+  background: #0500FF;
+}
+.block12 .tariff-full form .submit-btn:hover {
+  background: #ff0000;
+}
+.block12 .tariff-without {
+  background: #1A1A1A;
+  color: white;
+}
+.block12 .tariff-without .card__up, .block12 .tariff-without ul {
+  border-bottom: 1px dashed #383838;
+}
+.block12 .tariff-without ul li:before {
+  content: url("../img/mark_white.svg");
+}
+.block12 .tariff-without ul .benefits {
+  color: #777777;
+}
+.block12 .tariff-without ul .benefits:before {
+  content: url("../img/x_dark.svg");
+}
+.block12 .tariff-without form .sale-star strong {
+  color: black;
+}
+.block12 .tariff-without form .old-price {
+  color: white;
+}
+.block12 .tariff-without form .card__input-radio label:before {
+  background: url("../img/radio_empty_black.svg") 0 0 no-repeat;
+}
+.block12 .tariff-without form .card__input-radio .real-radio-btn:checked + label:before {
+  background: url("../img/radio_fill_black.svg") 0 0 no-repeat;
+}
+.block12 .tariff-without form input {
+  color: white;
+}
+.block12 .tariff-without form input:not([type=radio]) {
+  border-bottom: 1px solid #383838;
+}
+.block12 .tariff-without form .submit-btn {
+  background: transparent;
+  border: 1px solid #424242;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.block12 .tariff-without form .submit-btn:hover {
+  background: #ff0000;
+}
+
+.dark-form {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.form_done {
+  overflow: hidden;
+}
+.form_done .dark-form {
+  display: flex;
+}
+.form_done .form-success {
+  display: flex;
+}
+
+.form-success {
+  padding: 56px 15px 60px;
+  background: white;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+  max-width: 1020px;
+}
+.form-success .form-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.form-success h2 {
+  margin: 0 auto 7px;
+  color: black;
+  text-align: center;
+}
+.form-success .corr {
+  font-size: 19px;
+  line-height: 110%;
+  text-align: center;
+  color: #777777;
+  margin-bottom: 40px;
+}
+.form-success .desc {
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: black;
+  margin-bottom: 20px;
+}
+.form-success .subscribe-btn {
+  margin: 0 auto;
+  font-family: "Proxima Nova Sb", sans-serif;
+  color: white;
+  width: 350px;
+  height: 70px;
+  background: #0500FF;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px 0 38px;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+.form-success .subscribe-btn:hover {
+  background: #ff0000;
+}
+
+@media (max-width: 1440px) {
+  .block12__title h1 br {
+    display: none;
+  }
+  .block12__container {
+    max-width: 728px;
+  }
+  .block12__cards {
+    flex-direction: column;
+    grid-row-gap: 30px;
+  }
+  .block12__card {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .block12 {
+    margin-top: 11px;
+  }
+
+  .dark-form {
+    padding: 0 15px;
+  }
+
+  .form-success {
+    padding: 37px 14px 30px;
+    width: 95%;
+  }
+  .form-success h2 {
+    margin-bottom: 15px;
+    padding: 0 14px;
+  }
+  .form-success .corr {
+    font-size: 16px;
+    padding: 0 14px;
+    margin-bottom: 36px;
+  }
+  .form-success .desc {
+    font-size: 20px;
+    padding: 0 14px;
+    margin-bottom: 23px;
+  }
+  .form-success .subscribe-btn {
+    height: 60px;
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+  .form-success .subscribe-btn svg {
+    display: none;
+  }
+
+  .block12 {
+    margin-top: 57px;
+    margin-bottom: 70px;
+    padding: 0 15px;
+  }
+  .block12__container {
+    max-width: 400px;
+  }
+  .block12__title h1 {
+    text-align: left;
+    margin-bottom: 14px;
+    font-size: 34px;
+  }
+  .block12__title h1 br {
+    display: block;
+  }
+  .block12__title p {
+    font-size: 20px;
+    text-align: left;
+  }
+  .block12__cards {
+    margin-top: 25px;
+    flex-direction: column;
+    grid-row-gap: 30px;
+  }
+  .block12 .card__up, .block12 ul {
+    padding: 0 18px;
+  }
+  .block12__card {
+    width: 100%;
+    padding: 22px 0 15px;
+  }
+  .block12__card ul {
+    margin-top: 22px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+  }
+  .block12__card ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .block12__card ul li:before {
+    margin-right: 14px;
+  }
+  .block12__card p {
+    font-size: 16px;
+  }
+  .block12 .card__teachers img {
+    width: 60px;
+    height: 60px;
+  }
+  .block12 .card__title {
+    margin-top: 51px;
+    margin-bottom: 11px;
+  }
+  .block12 .card__info {
+    flex-direction: column;
+    grid-row-gap: 13px;
+    margin-bottom: 24px;
+  }
+  .block12 .card__info .info__item {
+    font-size: 20px;
+  }
+  .block12 form {
+    margin-top: 21px;
+    padding: 0 14px;
+  }
+  .block12 form .sale-star {
+    width: 110px;
+    height: 110px;
+    top: -40px;
+  }
+  .block12 form .sale-star strong {
+    font-size: 16px;
+  }
+  .block12 form .form__content {
+    padding: 0 4px;
+  }
+  .block12 form .form__content h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    max-width: 150px;
+  }
+  .block12 form .form__content .radios {
+    margin-bottom: 20px;
+  }
+  .block12 form .form__content .card__input-radio {
+    align-items: flex-start;
+  }
+  .block12 form .form__content .card__input-radio label {
+    font-size: 20px;
+  }
+  .block12 form .form__content .card__input-radio label br {
+    display: block;
+  }
+  .block12 form .form__content .card__input-radio label:before {
+    top: 3px;
+    width: 17px;
+    background-size: contain !important;
+    height: 17px;
+  }
+  .block12 form .input__wrap {
+    margin-bottom: 20px;
+  }
+  .block12 form .input__wrap input:not([type=radio]) {
+    padding: 21px 0 21px;
+  }
+  .block12 form .input__wrap input:not([type=radio]):not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .block12 form .input__wrap input, .block12 form .input__wrap label {
+    font-size: 16px;
+  }
+  .block12 form .submit-btn {
+    margin-top: 30px;
+    justify-content: center;
+    height: 60px;
+  }
+  .block12 form .submit-btn svg {
+    display: none;
+  }
+  .block12 form h4 {
+    font-size: 20px;
+  }
+  .block12 .tariff-without h2 {
+    margin-top: 19px;
+  }
+}
+
+/*# sourceMappingURL=tariff.css.map */

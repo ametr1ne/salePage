@@ -1,0 +1,743 @@
+.block12 {
+  margin-bottom: 130px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    margin: 0 auto;
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 55px;
+      line-height: 110%;
+      margin-bottom: 34px;
+
+      br {
+        display: none;
+      }
+
+      span {
+        color: #FFF444;
+      }
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 838px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #777777;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    width: 100%;
+    grid-column-gap: 30px;
+    margin-top: 51px;
+    align-items: flex-start;
+  }
+
+  &__card {
+    padding: 41px 0 34px;
+    width: 50%;
+    position: relative;
+
+    p {
+      color: #777777;
+    }
+
+    .card__up, ul {
+      padding: 0 36px;
+      border-bottom: 1px dashed #C7C7C7;
+    }
+
+    .card__teachers {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      img {
+        position: relative;
+
+        &:first-child {
+          z-index: 3;
+        }
+
+        &:nth-child(2) {
+          z-index: 2;
+        }
+
+        &:nth-child(3) {
+          z-index: 1;
+        }
+
+        &:not(:last-child) {
+          margin-right: -18px;
+        }
+      }
+    }
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 26px;
+      line-height: 120%;
+    }
+
+    .card__info {
+      display: flex;
+      margin-bottom: 34px;
+
+      .info__item {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+
+        &:not(:last-child) {
+          margin-right: 38px;
+        }
+      }
+    }
+
+    ul {
+      padding-top: 31px;
+      padding-bottom: 34px;
+
+      li {
+        font-size: 19px;
+        line-height: 130%;
+        display: flex;
+
+        &:before {
+          margin-top: -3px;
+          margin-right: 28px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+
+    form {
+      padding: 0 23px;
+      position: relative;
+
+      .sale-star {
+        position: absolute;
+        background: url("../img/sale_yellow.png") no-repeat;
+        width: 138px;
+        height: 138px;
+        background-size: contain;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -74px;
+        right: 20px;
+
+        strong {
+          transform: rotate(-3deg);
+        }
+      }
+
+      .form__content {
+        padding: 0 15px;
+      }
+
+      h4 {
+        margin-top: 47px;
+        font-size: 30px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        margin-bottom: 26px;
+      }
+
+      span.error {
+        color: red;
+        font-size: 14px;
+        line-height: 110%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+      }
+
+      .old-price {
+        margin-top: -9px;
+        color: black;
+        margin-left: 30px;
+        position: relative;
+        width: min-content;
+        white-space: nowrap;
+
+        &:before {
+          content: "";
+          width: 100%;
+          background: #FF4444;
+          position: absolute;
+          height: 1.5px;
+          display: block;
+          top: 8px;
+          transform: rotate(-3deg);
+        }
+      }
+
+      .radios {
+        margin-bottom: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 15px;
+
+        span.error {
+          right: unset;
+        }
+      }
+
+      .input__wrap {
+        position: relative;
+        z-index: 1;
+      }
+
+      input:not([type='radio']) {
+        display: block;
+        padding: 25px 0 25px;
+        width: 100%;
+        appearance: none;
+        outline: none;
+        font-size: 19px;
+        line-height: 65px;
+        border-bottom: 1px solid #C7C7C7;
+        box-shadow: none;
+        color: #000000;
+        border-radius: 0;
+        transition: border-bottom 0.3s linear;
+
+        &.error {
+          border-bottom: 1px solid red !important;
+        }
+
+        &::placeholder {
+          color: #000;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 27px;
+        }
+      }
+
+      .card__input-radio {
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 0;
+          height: 0;
+          position: absolute;
+          opacity: 0;
+          z-index: -1;
+        }
+
+        label {
+          font-size: 30px;
+          line-height: 130%;
+          cursor: pointer;
+          position: relative;
+          padding-left: 30px;
+          transition: color .3s;
+
+          br {
+            display: none;
+          }
+
+          &:hover {
+            color: #0500FF;
+          }
+
+          &:before {
+            content: '';
+            width: 21px;
+            display: inline-block;
+            height: 22px;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            background-size: contain;
+          }
+        }
+      }
+
+      label {
+        font-size: 19px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+
+        span {
+          color: #777777;
+        }
+      }
+
+      .submit-btn {
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        height: 70px;
+        color: white;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 29px 0 39px;
+        font-family: "Proxima Nova Sb", sans-serif;
+        font-size: 19px;
+        line-height: 140%;
+        margin-bottom: 22px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      h4 {
+        font-family: "Proxima Nova Sb", sans-serif;
+      }
+    }
+  }
+
+  .tariff-full {
+    background: #FFFFFF;
+
+    h2 {
+      color: black;
+    }
+
+    ul {
+      li {
+        &:before {
+          content: url("../img/mark.svg");
+        }
+      }
+    }
+
+    form {
+      .card__input-radio {
+        label {
+          &:before {
+            background: url("../img/radio_empty_white.svg") 0 0 no-repeat;
+          }
+        }
+        .real-radio-btn:checked + label {
+          &:before {
+            background: url("../img/radio_fill_white.svg") 0 0 no-repeat;
+          }
+        }
+      }
+
+      .submit-btn {
+        border: none;
+        background: #0500FF;
+
+        &:hover {
+          background: #ff0000;
+        }
+      }
+    }
+  }
+
+  .tariff-without {
+    background: #1A1A1A;
+    color: white;
+
+    .card__up, ul {
+      border-bottom: 1px dashed #383838;
+    }
+
+    ul {
+      li {
+        &:before {
+          content: url("../img/mark_white.svg");
+        }
+      }
+
+      .benefits {
+        color: #777777;
+
+        &:before {
+          content: url("../img/x_dark.svg");
+        }
+      }
+    }
+
+    form {
+      .sale-star {
+        strong {
+          color: black;
+        }
+      }
+      .old-price {
+        color: white;
+      }
+
+      .card__input-radio {
+        label {
+          &:before {
+            background: url("../img/radio_empty_black.svg") 0 0 no-repeat;
+          }
+        }
+        .real-radio-btn:checked + label {
+          &:before {
+            background: url("../img/radio_fill_black.svg") 0 0 no-repeat;
+          }
+        }
+      }
+
+      input {
+        color: white;
+
+        &:not([type='radio']) {
+          border-bottom: 1px solid #383838;
+        }
+      }
+
+      .submit-btn {
+        background: transparent;
+        border: 1px solid #424242;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        &:hover {
+          background: #ff0000;
+        }
+      }
+    }
+  }
+}
+
+.dark-form {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 20;
+}
+
+.form_done {
+  overflow: hidden;
+
+  .dark-form {
+    display: flex;
+  }
+
+  .form-success {
+    display: flex;
+  }
+}
+
+.form-success {
+  padding: 56px 15px 60px;
+  background: white;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+  max-width: 1020px;
+
+  .form-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  h2 {
+    margin: 0 auto 7px;
+    color: black;
+    text-align: center;
+  }
+
+  .corr {
+    font-size: 19px;
+    line-height: 110%;
+    text-align: center;
+    color: #777777;
+    margin-bottom: 40px;
+  }
+
+  .desc {
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-btn {
+    margin: 0 auto;
+    font-family: "Proxima Nova Sb", sans-serif;
+    color: white;
+    width: 350px;
+    height: 70px;
+    background: #0500FF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 38px;
+    cursor: pointer;
+    transition: background .4s;
+
+    &:hover {
+      background: #ff0000;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .block12 {
+    &__title {
+      h1 {
+        br {
+          display: none;
+        }
+      }
+    }
+    &__container {
+      max-width: 728px;
+    }
+
+    &__cards {
+      flex-direction: column;
+      grid-row-gap: 30px;
+    }
+
+    &__card {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .block12 {
+    margin-top: 11px;
+  }
+  .dark-form {
+    padding: 0 15px;
+  }
+  .form-success {
+    padding: 37px 14px 30px;
+    width: 95%;
+
+    h2 {
+      margin-bottom: 15px;
+      padding: 0 14px;
+    }
+
+    .corr {
+      font-size: 16px;
+      padding: 0 14px;
+      margin-bottom: 36px;
+    }
+
+    .desc {
+      font-size: 20px;
+      padding: 0 14px;
+      margin-bottom: 23px;
+    }
+
+    .subscribe-btn {
+      height: 60px;
+      font-size: 16px;
+      width: 100%;
+      justify-content: center;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+  .block12 {
+    margin-top: 57px;
+    margin-bottom: 70px;
+    padding: 0 15px;
+
+    &__container {
+      max-width: 400px;
+    }
+
+    &__title {
+      h1 {
+        text-align: left;
+        margin-bottom: 14px;
+        font-size: 34px;
+
+        br {
+          display: block;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        text-align: left;
+      }
+    }
+
+    &__cards {
+      margin-top: 25px;
+      flex-direction: column;
+      grid-row-gap: 30px;
+    }
+
+    .card__up, ul {
+      padding: 0 18px;
+    }
+
+    &__card {
+      width: 100%;
+      padding: 22px 0 15px;
+
+      ul {
+        margin-top: 22px;
+        padding-bottom: 25px;
+        margin-bottom: 0;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 12px;
+          }
+
+          &:before {
+            margin-right: 14px;
+          }
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .card {
+      &__teachers {
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      &__title {
+        margin-top: 51px;
+        margin-bottom: 11px;
+      }
+
+      &__info {
+        flex-direction: column;
+        grid-row-gap: 13px;
+        margin-bottom: 24px;
+
+        .info__item {
+          font-size: 20px;
+        }
+      }
+    }
+
+    form {
+      margin-top: 21px;
+      padding: 0 14px;
+
+      .sale-star {
+        width: 110px;
+        height: 110px;
+        top: -40px;
+
+        strong {
+          font-size: 16px;
+        }
+      }
+
+      .form__content {
+        padding: 0 4px;
+
+        h4 {
+          margin-top: 0;
+          margin-bottom: 15px;
+          max-width: 150px;
+        }
+
+        .radios {
+          margin-bottom: 20px;
+        }
+
+        .card__input-radio {
+          align-items: flex-start;
+
+          label {
+            font-size: 20px;
+
+            br {
+              display: block;
+            }
+            &:before {
+              top: 3px;
+              width: 17px;
+              background-size: contain !important;
+              height: 17px;
+            }
+          }
+        }
+      }
+
+      .input__wrap {
+        margin-bottom: 20px;
+
+        input {
+          &:not([type='radio']) {
+            padding: 21px 0 21px;
+
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+
+        input, label {
+          font-size: 16px;
+        }
+      }
+
+      .submit-btn {
+        margin-top: 30px;
+        justify-content: center;
+        height: 60px;
+
+        svg {
+          display: none;
+        }
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .tariff-without {
+      h2 {
+        margin-top: 19px;
+      }
+    }
+  }
+}

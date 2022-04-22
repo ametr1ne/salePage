@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  &__logo {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__tapes {
+    margin-top: 57px;
+    width: 100%;
+  }
+  &__tapes_mob {
+    display: none;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    &__logo {
+      width: 46px;
+      height: 35px;
+      top: 20px;
+    }
+    &__tapes {
+      display: none;
+    }
+    &__tapes_mob {
+      display: block;
+    }
+  }
+}

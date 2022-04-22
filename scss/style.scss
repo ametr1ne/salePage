@@ -1,0 +1,19 @@
+@import "font-face";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 19px;
+  line-height: 130%;
+}
+
+@import "header";
+@import "tariff";
+@import "tariff_add";
+
